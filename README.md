@@ -138,3 +138,9 @@ image1.png -> /images/image1.png
 **GET** → **`localhost:3000/api/flippers`**
 
 image2.png -> /images/image2.png
+
+**Optimisations**
+
+Search : Pour optimiser il pourrait être intéressant de créer des routes avec des filtres sur des champs de model. 
+
+Ameliorer les performances : Ajouter de la pagination afin d'éviter de tout charger d'un coup 
