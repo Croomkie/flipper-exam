@@ -131,10 +131,10 @@ J'ai aussi créé un modèle **`Flipper`**, dans lequel il y a le **nom** car c'
 
 **GET → `localhost:3000/api/marques`**
 
-![Untitled](MongoDb%20f3e6e346a54c4ecca6c1540aaeaa7415/Untitled.png)
+image1.png -> /images/image1.png
 
 **Flipper**
 
 **GET** → **`localhost:3000/api/flippers`**
 
-![Untitled](MongoDb%20f3e6e346a54c4ecca6c1540aaeaa7415/Untitled%201.png)
+image2.png -> /images/image2.png
