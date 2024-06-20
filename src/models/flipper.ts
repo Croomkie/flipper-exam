@@ -1,30 +1,30 @@
 import { Schema, model, Types } from "mongoose";
 
 interface ICaracteristiques {
-  année: number;
+  annee: number;
   note: number;
   prix: number;
-  disponibilité: string;
+  disponibilite: string;
 }
 
 interface IFlipper {
   nom: string;
   marque_id: Types.ObjectId;
-  caractéristiques: ICaracteristiques;
+  caracteristiques: ICaracteristiques;
   images: string[];
 }
 
 const caracteristiquesSchema = new Schema<ICaracteristiques>({
-  année: { type: Number, required: true },
+  annee: { type: Number, required: true },
   note: { type: Number, required: true },
   prix: { type: Number, required: true },
-  disponibilité: { type: String, required: true, trim: true },
+  disponibilite: { type: String, required: true, trim: true },
 });
 
 const flipperSchema = new Schema<IFlipper>({
   nom: { type: String, required: true, trim: true },
   marque_id: { type: Schema.Types.ObjectId, required: true, ref: "Marque" },
-  caractéristiques: { type: caracteristiquesSchema, required: true },
+  caracteristiques: { type: caracteristiquesSchema, required: true },
   images: { type: [String], required: true },
 });
 
